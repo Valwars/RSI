@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{cleveland_graphical_1984}
+Cleveland, W.S., McGill, R.: Graphical perception: Theory, experimentation, and application to the development of graphical methods. Journal of the American Statistical Association  \textbf{79}(387),  531--554 (1984). \doi{10.2307/2288400}
+
+\bibitem{mackinlay_automating_1986}
+Mackinlay, J.: Automating the design of graphical presentations of relational information. ACM Transactions on Graphics  \textbf{5}(2),  110--141 (1986). \doi{10.1145/22949.22950}
+
+\bibitem{shneiderman_eyes_2003}
+Shneiderman, B.: The {Eyes} {Have} {It}: {A} {Task} by {Data} {Type} {Taxonomy} for {Information} {Visualizations}. In: Bederson, B.B., Shneiderman, B. (eds.) The {Craft} of {Information} {Visualization}, pp. 364--371. Interactive {Technologies}, Morgan Kaufmann, San Francisco (Jan 2003). \doi{10.1016/B978-155860915-0/50046-9}, \url{https://www.sciencedirect.com/science/article/pii/B9781558609150500469}
+
+\bibitem{tufte_visual_2001}
+Tufte, E.R.: The Visual Display of Quantitative Information. Graphics Press (2001)
+
+\bibitem{ware_information_2012}
+Ware, C.: Information Visualization: Perception for Design. Morgan Kaufmann (2012)
+
+\end{thebibliography}
