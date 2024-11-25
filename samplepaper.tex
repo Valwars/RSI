@@ -5,68 +5,47 @@
 \documentclass[runningheads]{llncs}
 \bibliographystyle{splncs04}
 
-%
 \usepackage[T1]{fontenc}
-% T1 fonts will be used to generate the final print and online PDFs,
-% so please use T1 fonts in your manuscript whenever possible.
-% Other font encondings may result in incorrect characters.
-%
 \usepackage{graphicx}
-% Used for displaying a sample figure. If possible, figure files should
-% be included in EPS format.
-%
-% If you use the hyperref package, please uncomment the following two lines
-% to display URLs in blue roman font according to Springer's eBook style:
-%\usepackage{color}
-%\renewcommand\UrlFont{\color{blue}\rmfamily}
-%\urlstyle{rm}
-%
+
 \begin{document}
-%
-\title{Techniques et outils de visualisation temporel et d'interaction avec un focus sur la réservation}
-\titlerunning{Techniques et outils de visualisation temporel et d'interaction}
-%
-%\titlerunning{Abbreviated paper title}
-% If the paper title is too long for the running head, you can set
-% an abbreviated paper title here
-%
+
+\title{Techniques et Outils de Visualisation Temporelle et d'Interaction avec un Focus sur la Réservation}
+\titlerunning{Techniques et Outils de Visualisation Temporelle et d'Interaction}
+
 \author{Merault Valentin \and
 Romano Tom \and
 N'Diaye Baptiste}
-%
+
 \authorrunning{Merault Valentin \and
 Romano Tom \and
 N'Diaye Baptiste}
-% First names are abbreviated in the running head.
-% If there are more than two authors, 'et al.' is used.
-%
-\institute{Ecole National d'Aviation Civile, France }
-%
-\maketitle              % typeset the header of the contribution
-%
+
+\institute{École Nationale de l'Aviation Civile, France}
+
+\maketitle
+
 \begin{abstract}
 Cet article explore les techniques et outils de visualisation des données temporelles et d'interaction utilisateur, avec un focus particulier sur les systèmes de réservation en ligne. La visualisation des données temporelles joue un rôle essentiel en permettant aux utilisateurs d'interpréter et d'agir sur des ensembles de données dynamiques et multidimensionnels. Les principaux défis des systèmes de réservation incluent la gestion en temps réel de la demande, l'optimisation des ressources et la fourniture d'une expérience utilisateur efficace.
 
 Cette étude examine des techniques de visualisation de pointe telles que les timelines, les vues fisheye et les représentations en 3D, en évaluant leur capacité à relever ces défis. Les forces identifiées incluent la modularité, l’adaptabilité et des interactions utilisateur enrichies, tandis que les limitations comme la surcharge cognitive et les problèmes d’évolutivité sont également mises en lumière. L'accent est mis sur la sélection de techniques alliant utilisabilité et performance, afin de garantir que les systèmes puissent gérer efficacement des demandes dynamiques tout en restant accessibles à un public varié. En proposant un aperçu des meilleures pratiques et des analyses approfondies, cet article fournit une base stratégique pour concevoir des systèmes de réservation intégrant des visualisations temporelles efficaces et des interactions centrées sur l'utilisateur.
 
-\keywords{Utilisabilité  \and UX \and Systèmes de réservation en ligne \and Visualisation des données temporelles}
+\keywords{Utilisabilité \and UX \and Systèmes de réservation en ligne \and Visualisation des données temporelles}
 \end{abstract}
-%
-%
-%
-\section{Introduction [Baptiste Valentin]}
+
+\section{Introduction}
 La visualisation des données temporelles transforme des informations complexes en représentations compréhensibles, essentielles pour détecter des tendances et prendre des décisions. Dans des domaines comme la médecine, les transports ou la gestion de projet, elle aide à anticiper des problèmes, optimiser des ressources et coordonner des activités. Cependant, ces données, souvent volumineuses et dynamiques, posent plusieurs défis.
 
 Les utilisateurs rencontrent des difficultés liées à la surcharge cognitive, à la manipulation complexe des informations et à un manque de précision dans la représentation temporelle. Ces défis sont particulièrement marqués dans les systèmes de réservation, où il est essentiel de disposer de visualisations claires et réactives pour gérer efficacement la disponibilité des ressources et répondre rapidement aux besoins des utilisateurs.
 
 L'absence de solutions adaptées entrave l’efficacité de nombreuses plateformes, soulignant l'importance de mieux comprendre les techniques existantes de visualisation temporelle. Cette étude se concentre sur l’exploration et la classification de ces méthodes en fonction de critères clés, afin de structurer leur utilisation selon les besoins spécifiques des systèmes de réservation.
 
-\section{Fondamentaux de la visualisation}
+\section{Fondamentaux de la Visualisation}
 
 La visualisation est un domaine interdisciplinaire visant à représenter graphiquement des données pour faciliter leur interprétation et leur exploration. Elle repose sur des principes fondamentaux qui assurent la clarté, la pertinence et l'efficacité des représentations. Ces principes s’appuient sur des recherches largement reconnues dans les domaines de la cognition visuelle, de la perception humaine et de la conception d’interfaces.
 
-\subsection{La perception visuelle et les représentations efficaces}
-La conception de visualisations s’appuie sur les capacités naturelles de la perception humaine. Selon les travaux de Ware \cite{ware_information_2012}, le système visuel humain est particulièrement performant pour détecter des patterns, repérer des anomalies et interpréter des relations spatiales. Les visualisations efficaces exploitent ces capacités pour réduire la charge cognitive des utilisateurs.
+\subsection{La Perception Visuelle et les Représentations Efficaces}
+La conception de visualisations s’appuie sur les capacités naturelles de la perception humaine. Selon les travaux de Ware \cite{ware_information_2012}, le système visuel humain est particulièrement performant pour détecter des motifs, repérer des anomalies et interpréter des relations spatiales. Les visualisations efficaces exploitent ces capacités pour réduire la charge cognitive des utilisateurs.
 
 Quelques principes clés liés à la perception incluent :
 \begin{itemize}
@@ -75,17 +54,17 @@ Quelques principes clés liés à la perception incluent :
     \item \textbf{La limitation de la mémoire de travail} : Comme indiqué par Miller \cite{miller_magical_1956}, les utilisateurs peuvent gérer simultanément un nombre limité d'éléments dans leur mémoire de travail (généralement 7 ± 2). Les visualisations doivent donc limiter le nombre d'informations affichées pour éviter une surcharge cognitive.
 \end{itemize}
 
-\subsection{Interaction avec les données}
-Un des piliers de la visualisation moderne est l'interaction. Shneiderman a introduit le mantra célèbre "Overview first, zoom and filter, then details on demand", qui guide la conception des interfaces interactives \cite{shneiderman_eyes_2003}. Ce principe se traduit par :
+\subsection{Interaction avec les Données}
+Un des piliers de la visualisation moderne est l'interaction. Shneiderman a introduit le mantra célèbre \textit{"Overview first, zoom and filter, then details on demand"}, qui guide la conception des interfaces interactives \cite{shneiderman_eyes_2003}. Ce principe se traduit par :
 \begin{itemize}
     \item Fournir une vue d’ensemble pour contextualiser les données.
     \item Permettre aux utilisateurs de filtrer et de zoomer pour se concentrer sur des sous-ensembles pertinents.
     \item Offrir des détails supplémentaires uniquement lorsque cela est nécessaire.
 \end{itemize}
 
-Les interactions permettent également d’explorer les données sous différents angles, d’identifier des patterns et de tester des hypothèses, comme l’illustrent les travaux de Heer et Shneiderman \cite{heer_design_2012} sur les visualisations interactives.
+Les interactions permettent également d’explorer les données sous différents angles, d’identifier des motifs et de tester des hypothèses, comme l’illustrent les travaux de Heer et Shneiderman \cite{heer_design_2012} sur les visualisations interactives.
 
-\subsection{Encodage des données : principes et bonnes pratiques}
+\subsection{Encodage des Données : Principes et Bonnes Pratiques}
 L'encodage visuel, c'est-à-dire la manière dont les données sont transformées en éléments graphiques, est un élément central de la visualisation. Les travaux de Mackinlay \cite{mackinlay_automating_1986} ont identifié les canaux visuels les plus efficaces pour représenter différents types de données :
 \begin{itemize}
     \item \textbf{Position sur un axe} : Le canal visuel le plus précis pour représenter des données quantitatives.
@@ -96,24 +75,22 @@ L'encodage visuel, c'est-à-dire la manière dont les données sont transformée
 
 L'application rigoureuse de ces principes améliore la lisibilité et la pertinence des visualisations. Par exemple, Cleveland et McGill \cite{cleveland_graphical_1984} ont démontré que certaines formes d'encodage, comme les diagrammes en barres, sont plus intuitives que d'autres, comme les diagrammes circulaires.
 
-\subsection{Réduction de la complexité des données}
+\subsection{Réduction de la Complexité des Données}
 Dans les systèmes modernes, les ensembles de données sont souvent volumineux et complexes. La réduction de cette complexité est un défi majeur pour les visualisations. Les approches telles que l'agrégation des données (par exemple, les histogrammes) ou la visualisation hiérarchique (comme les treemaps) permettent de simplifier la présentation sans perdre d'informations critiques \cite{johnson_hierarchical_1991}. Les travaux de Tufte \cite{tufte_visual_2001} soulignent l’importance d’éliminer les "bruits visuels" et de se concentrer sur les données pertinentes.
 
-\subsection{Applications aux systèmes de réservation}
+\subsection{Applications aux Systèmes de Réservation}
 Dans le contexte des systèmes de réservation, ces principes fondamentaux permettent de relever des défis spécifiques :
 \begin{itemize}
-    \item **Encodage clair des créneaux disponibles et occupés** : Utiliser des couleurs ou des formes intuitives pour distinguer rapidement les états des ressources.
-    \item **Navigation fluide dans le temps** : Intégrer des interactions de zoom et de filtre pour explorer différentes échelles temporelles.
-    \item **Réduction de la surcharge cognitive** : Limiter les informations affichées à l’essentiel et structurer visuellement les données pour les rendre immédiatement compréhensibles.
+    \item \textbf{Encodage clair des créneaux disponibles et occupés} : Utiliser des couleurs ou des formes intuitives pour distinguer rapidement les états des ressources.
+    \item \textbf{Navigation fluide dans le temps} : Intégrer des interactions de zoom et de filtre pour explorer différentes échelles temporelles.
+    \item \textbf{Réduction de la surcharge cognitive} : Limiter les informations affichées à l’essentiel et structurer visuellement les données pour les rendre immédiatement compréhensibles.
 \end{itemize}
 
 En s'appuyant sur ces fondamentaux, les visualisations peuvent transformer les systèmes de réservation en outils performants, répondant aux attentes des utilisateurs et optimisant la gestion des ressources.
 
+\section{Pour la Réservation : Besoins Spécifiques en Visualisation}
 
-
-\section{Pour la réservation : les besoins spécifiques en visualisation}
-
-\subsection{Le rôle de la visualisation dans les systèmes de réservation}
+\subsection{Le Rôle de la Visualisation dans les Systèmes de Réservation}
 Un système de réservation repose sur la gestion visuelle des créneaux disponibles et des ressources associées. La visualisation y joue un rôle clé pour permettre aux utilisateurs de :
 \begin{itemize}
     \item \textbf{Comprendre rapidement les options disponibles} : Identifier les créneaux libres ou occupés, les périodes de forte demande, et les plages optimales pour une réservation.
@@ -121,22 +98,18 @@ Un système de réservation repose sur la gestion visuelle des créneaux disponi
     \item \textbf{Éviter les erreurs} : Prévenir les chevauchements ou les conflits grâce à une représentation claire et actualisée des disponibilités.
 \end{itemize}
 
-\subsection{Problématiques spécifiques de la visualisation dans les systèmes de réservation}
+\subsection{Problématiques Spécifiques de la Visualisation dans les Systèmes de Réservation}
 Les systèmes de réservation sont confrontés à plusieurs défis liés à la visualisation des données temporelles :
 
 \begin{enumerate}
     \item \textbf{Représentation des données dynamiques} : Les disponibilités évoluent constamment en fonction des réservations, des annulations ou des modifications. Une visualisation doit pouvoir refléter ces changements en temps réel tout en restant compréhensible.
-    
     \item \textbf{Gestion de la densité d’information} : Les systèmes doivent représenter une grande quantité de données, notamment lorsque plusieurs ressources (par exemple, plusieurs salles ou équipements) sont gérées simultanément. Cela peut entraîner une surcharge visuelle si la visualisation n’est pas optimisée.
-    
     \item \textbf{Clarté des interactions} : Les utilisateurs doivent pouvoir interagir facilement avec la visualisation : zoomer pour consulter des créneaux spécifiques, filtrer par ressource ou période, et ajuster leurs recherches sans effort.
-    
     \item \textbf{Accessibilité visuelle} : Les visualisations doivent rester lisibles, que ce soit sur des écrans larges ou des appareils mobiles, tout en s’adaptant aux besoins d’utilisateurs novices ou expérimentés.
-    
     \item \textbf{Représentation des variations temporelles} : Certains systèmes de réservation doivent gérer des cycles temporels (par exemple, des créneaux hebdomadaires récurrents) ou des variations imprévisibles dans la demande. La visualisation doit pouvoir illustrer ces patterns pour aider à l’anticipation et à la planification.
 \end{enumerate}
 
-\subsection{Pourquoi une visualisation adaptée est essentielle}
+\subsection{Pourquoi une Visualisation Adaptée est Essentielle}
 Une visualisation bien conçue permet aux utilisateurs de prendre des décisions rapides et éclairées. Elle simplifie la navigation dans des données temporelles complexes et améliore l'expérience globale. Pour les gestionnaires, elle offre un outil stratégique pour :
 \begin{itemize}
     \item Identifier les périodes de forte ou faible occupation.
@@ -145,19 +118,91 @@ Une visualisation bien conçue permet aux utilisateurs de prendre des décisions
 \end{itemize}
 
 Ainsi, dans le contexte des systèmes de réservation, la visualisation ne se limite pas à présenter des données : elle devient un levier essentiel pour répondre aux défis de gestion et garantir l’efficacité des interactions.
-Ces principes fondamentaux ont guidé nos recherches pour identifier et classer les techniques les plus adaptées aux besoins spécifiques des systèmes de réservation. En combinant des approches d'encodage, d'interaction et de réduction de la complexité, cette étude propose une exploration approfondie des solutions actuelles.
+
+\section{Synthèse}
+
+\subsection{Nature des Données et du Temps Représenté}
+
+\subsubsection{Données Continues vs. Données Discrètes}
+\textbf{Techniques adaptées à des représentations linéaires} : Les \textbf{Timelines linéaires} et \textbf{DateLens} sont idéales pour visualiser des données discrètes, permettant de représenter des événements ponctuels le long d'un axe temporel.
+
+\textbf{Techniques adaptées aux cycles répétitifs ou périodiques} : Les \textbf{Spirales temporelles} et \textbf{Circle View} excellent dans la représentation de données cycliques, comme les réservations récurrentes ou les tendances saisonnières.
+
+\subsubsection{Visualisation de l'Incertitude Temporelle}
+\textbf{PlanningLines} : Permet d'intégrer des intervalles ou des plages temporelles incertaines en visualisant les durées minimales et maximales des créneaux.
+
+\textbf{Histogrammes de disponibilité} : Utilisent des probabilités temporelles pour représenter les chances d'occupation ou de disponibilité sur une période donnée.
+
+\subsection{Dimensionnalité et Espace Visuel}
+
+\subsubsection{Visualisation 1D et 2D : Représentation Linéaire et Hiérarchique}
+\textbf{Timelines linéaires} : Offrent une vue séquentielle des événements, facilitant la compréhension des enchaînements.
+
+\textbf{Treemaps temporels} : Organisent les données hiérarchiques en blocs imbriqués, permettant de visualiser des catégories et sous-catégories de réservations.
+
+\subsubsection{Visualisation Multidimensionnelle et 3D}
+\textbf{Space-Time Cube} : Représente les données dans un espace tridimensionnel, combinant les dimensions spatiales et temporelles pour visualiser des schémas complexes.
+
+\textbf{Perspective Wall} : Fournit une vue étendue avec un focus central détaillé et un contexte latéral, idéal pour explorer de longues périodes.
+
+\subsubsection{Techniques de Distorsion pour Gérer des Petits Écrans}
+\textbf{DateLens (Fisheye)} : Utilise une distorsion pour afficher simultanément les détails et le contexte sur de petits écrans.
+
+\textbf{Circle View} : Adapte la représentation circulaire pour des écrans réduits, tout en conservant la capacité à représenter des cycles.
+
+\subsection{Interactions Utilisateur}
+
+\subsubsection{Exploration Directe et Manipulation des Données}
+\textbf{Drill-down et zoom} : Présents dans les \textbf{Treemaps} et le \textbf{Perspective Wall}, ils permettent d'approfondir les données tout en conservant une vue d'ensemble.
+
+\textbf{Navigation dans le temps} : \textbf{DateLens} et le \textbf{Space-Time Cube} offrent des interactions naturelles pour explorer différentes périodes.
+
+\subsubsection{Narration Interactive}
+\textbf{Trendalyzer} : Anime les données pour explorer des séquences narratives, aidant à comprendre les évolutions et tendances.
+
+\subsubsection{Prédictions et Exploration Hypothétique}
+\textbf{PlanningLines} : Permet d'ajuster les scénarios et d'évaluer les possibilités futures en modifiant les plages temporelles.
+
+\subsection{Cas d’Usage et Applications}
+
+\subsubsection{Planification et Gestion des Ressources}
+\textbf{PlanningLines} et \textbf{Timelines linéaires} : Aident à optimiser l'utilisation des ressources et à réduire les conflits de réservation.
+
+\subsubsection{Réservations Multiressources ou Multi-Périodes}
+\textbf{Circle View} et \textbf{Space-Time Cube} : Adaptés pour visualiser des réservations impliquant plusieurs ressources ou étalées sur plusieurs périodes.
+
+\subsubsection{Tendances Temporelles et Cycles}
+\textbf{Graphes animés} et \textbf{Spiral Plots} : Permettent d'identifier des cycles et des tendances, facilitant la prise de décision stratégique.
+
+\subsection{Contraintes Matérielles et Scalabilité}
+
+\subsubsection{Adaptabilité aux Écrans Mobiles vs Grands Écrans}
+\textbf{Techniques adaptées aux petits écrans} : \textbf{DateLens} et \textbf{Circle View} sont conçus pour offrir une expérience optimale sur des dispositifs mobiles.
+
+\textbf{Techniques pour des tableaux de bord professionnels} : Le \textbf{Space-Time Cube} et le \textbf{Perspective Wall} sont mieux adaptés aux grands écrans pour une visualisation détaillée.
+
+\subsubsection{Capacité à Gérer de Grands Ensembles de Données}
+\textbf{Treemaps temporels} : Efficaces pour représenter des hiérarchies complexes avec de nombreuses catégories.
+
+\textbf{Timelines} : Idéales pour des volumes de données moyens, offrant une clarté dans les détails.
+
+\section{Conclusion}
+
+La visualisation des données temporelles est un élément crucial pour les systèmes de réservation, permettant une gestion efficace des ressources et une expérience utilisateur optimisée. Cet article a exploré les différentes techniques et outils de visualisation temporelle et d'interaction utilisateur, en mettant l'accent sur leur application spécifique dans le contexte des réservations en ligne.
+
+Nous avons d'abord présenté les fondamentaux de la visualisation, en soulignant l'importance de la perception visuelle, de l'interaction avec les données, et des bonnes pratiques d'encodage pour créer des représentations efficaces. Ces principes sont essentiels pour concevoir des visualisations qui réduisent la charge cognitive des utilisateurs et facilitent la compréhension des informations complexes.
+
+Ensuite, nous avons identifié les besoins spécifiques en visualisation pour les systèmes de réservation, tels que la représentation des données dynamiques, la gestion de la densité d'information, et l'accessibilité sur différents dispositifs. Ces défis nécessitent l'utilisation de techniques adaptées pour répondre aux attentes des utilisateurs et optimiser la gestion des ressources.
+
+Dans notre synthèse, nous avons examiné diverses techniques de visualisation temporelle, comme les \textbf{timelines linéaires}, les \textbf{spirales temporelles}, les \textbf{treemaps temporels}, le \textbf{Space-Time Cube}, et des outils comme \textbf{DateLens} et \textbf{Trendalyzer}. Chaque technique a été évaluée en fonction de sa capacité à représenter les données continues ou discrètes, à gérer la dimensionnalité et l'espace visuel, et à offrir des interactions utilisateur efficaces.
+
+Les techniques comme les \textbf{timelines linéaires} et les \textbf{PlanningLines} se sont révélées particulièrement utiles pour représenter des événements discrets et gérer l'incertitude temporelle. Les approches multidimensionnelles, telles que le \textbf{Space-Time Cube}, offrent des perspectives enrichies pour visualiser des schémas complexes, bien qu'elles nécessitent des ressources matérielles plus importantes.
+
+Enfin, nous avons discuté des contraintes matérielles et de la scalabilité, en soulignant l'importance d'adapter les visualisations aux différents dispositifs, des petits écrans mobiles aux grands écrans de bureau, pour assurer une expérience utilisateur cohérente.
+
+En conclusion, le choix de la technique de visualisation adaptée est essentiel pour répondre aux besoins spécifiques des systèmes de réservation. Il est crucial de trouver un équilibre entre la richesse fonctionnelle, la simplicité d'utilisation et les contraintes matérielles. Les techniques présentées dans cet article offrent une base solide pour concevoir des systèmes de réservation performants, centrés sur l'utilisateur, et capables de gérer efficacement des données temporelles complexes.
 
 
-
-%
-% ---- Bibliography ----
-%
-% BibTeX users should specify bibliography style 'splncs04'.
-% References will then be sorted and formatted in the correct style.
-%
-% \bibliographystyle{splncs04}
-% \bibliography{mybibliography}
-%
 \bibliographystyle{splncs04}
 \bibliography{references}
 

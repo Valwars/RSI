@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex samplepaper"] 1732550130.28004 "samplepaper.aux" "samplepaper.bbl" "samplepaper" 1732550130.42869 2
+["bibtex samplepaper"] 1732562563.57405 "samplepaper.aux" "samplepaper.bbl" "samplepaper" 1732562563.85709 2
   "./references.bib" 1732548643.72592 55751 0995f60d1520731821904d7965ed02b5 ""
   "./splncs04.bst" 1731832326 32146 aadf770ded437d161532035219ea6f45 ""
-  "samplepaper.aux" 1732550129.8953 2446 1fc836bb8f6d7ffbf415270da79384cf "pdflatex"
+  "samplepaper.aux" 1732562563.06775 4855 9a44100e3b906f9765f7858792b5019d "pdflatex"
   (generated)
   "samplepaper.bbl"
   "samplepaper.blg"
   (rewritten before read)
-["pdflatex"] 1732550129.47442 "/Users/valentinmerault/Projets/RSI/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1732550130.42882 0
-  "/Users/valentinmerault/Projets/RSI/samplepaper.tex" 1732550128.18226 14243 6b31494bc86840f5e06f61964c5a9861 ""
+["pdflatex"] 1732562562.59246 "/Users/valentinmerault/Projets/RSI/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1732562563.85722 0
+  "/Users/valentinmerault/Projets/RSI/samplepaper.tex" 1732562560.06452 20307 59632a5224680f2ad116b615fec79172 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -20,6 +20,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm" 1136768653 3584 3169d30142b88a27d4ab0e3468e963a2 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm" 1136768653 3072 3bce340d4c075dffe6d4ec732b4c32fe ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb" 1215737283 143961 201304b65f97bc643fbd0bcf0685d1fe ""
@@ -28,6 +29,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb" 1215737283 149037 995a6f1e12c1d647b99b1cf55db78699 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb" 1215737283 186554 e8f0fa8ca05e038f257a06405232745f ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls" 1705352648 20144 147463a6a579f4597269ef9565205cfe ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty" 1705352648 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
@@ -48,9 +50,9 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731838798 8221431 c02329c434cda70acdf978b2d5a1c17c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "llncs.cls" 1731832326 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1732550129.8953 2446 1fc836bb8f6d7ffbf415270da79384cf "pdflatex"
-  "samplepaper.bbl" 1732550130.40361 1328 213c9c44b1c4ec6764bb3657c4f00b02 "bibtex samplepaper"
-  "samplepaper.tex" 1732550128.18226 14243 6b31494bc86840f5e06f61964c5a9861 ""
+  "samplepaper.aux" 1732562563.06775 4855 9a44100e3b906f9765f7858792b5019d "pdflatex"
+  "samplepaper.bbl" 1732562563.85362 1328 213c9c44b1c4ec6764bb3657c4f00b02 "bibtex samplepaper"
+  "samplepaper.tex" 1732562560.06452 20307 59632a5224680f2ad116b615fec79172 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"

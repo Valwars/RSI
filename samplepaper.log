@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.17)  25 NOV 2024 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.17)  25 NOV 2024 20:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,20 +176,20 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./samplepaper.aux)
 \openout1 = `samplepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count293
@@ -210,16 +210,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 45.
+(Font)              <5> on input line 26.
 
-Overfull \hbox (6.0753pt too wide) in paragraph at lines 50--51
+Overfull \hbox (6.0753pt too wide) in paragraph at lines 31--32
 \T1/cmr/m/n/9 restant ac-ces-si-bles à un pub-lic varié. En pro-posant un aperçu des meilleures
  []
 
 
-Overfull \hbox (16.2298pt too wide) in paragraph at lines 50--51
+Overfull \hbox (16.2298pt too wide) in paragraph at lines 31--32
 \T1/cmr/m/n/9 pra-tiques et des anal-y-ses ap-pro-fondies, cet ar-ti-cle four-nit une base stratégique
  []
 
@@ -227,44 +227,59 @@ Overfull \hbox (16.2298pt too wide) in paragraph at lines 50--51
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-LaTeX Warning: Citation `ware_information_2012' on page 2 undefined on input line 69.
+LaTeX Warning: Citation `ware_information_2012' on page 2 undefined on input line 48.
 
 
-LaTeX Warning: Citation `card_readings_1999' on page 2 undefined on input line 74.
+LaTeX Warning: Citation `card_readings_1999' on page 2 undefined on input line 53.
 
 
-LaTeX Warning: Citation `miller_magical_1956' on page 2 undefined on input line 75.
+LaTeX Warning: Citation `miller_magical_1956' on page 2 undefined on input line 54.
 
 
-LaTeX Warning: Citation `shneiderman_eyes_2003' on page 2 undefined on input line 79.
+LaTeX Warning: Citation `shneiderman_eyes_2003' on page 2 undefined on input line 58.
 
 [2]
 
-LaTeX Warning: Citation `heer_design_2012' on page 3 undefined on input line 86.
+LaTeX Warning: Citation `heer_design_2012' on page 3 undefined on input line 65.
 
 
-LaTeX Warning: Citation `mackinlay_automating_1986' on page 3 undefined on input line 89.
+LaTeX Warning: Citation `mackinlay_automating_1986' on page 3 undefined on input line 68.
 
 
-LaTeX Warning: Citation `cleveland_graphical_1984' on page 3 undefined on input line 97.
+LaTeX Warning: Citation `cleveland_graphical_1984' on page 3 undefined on input line 76.
 
 
-LaTeX Warning: Citation `johnson_hierarchical_1991' on page 3 undefined on input line 100.
+LaTeX Warning: Citation `johnson_hierarchical_1991' on page 3 undefined on input line 79.
 
 
-LaTeX Warning: Citation `tufte_visual_2001' on page 3 undefined on input line 100.
-
-
-Overfull \hbox (0.43463pt too wide) in paragraph at lines 105--106
-[]\T1/cmr/m/n/10 **Encodage clair des créneaux disponibles et oc-cupés** : Utiliser des couleurs
- []
+LaTeX Warning: Citation `tufte_visual_2001' on page 3 undefined on input line 79.
 
 [3]
-Overfull \hbox (5.77916pt too wide) in paragraph at lines 119--120
+Overfull \hbox (5.77916pt too wide) in paragraph at lines 96--97
 []\T1/cmr/bx/n/10 Comprendre rapi-de-ment les op-tions disponibles \T1/cmr/m/n/10 : Iden-ti-fier les créneaux
  []
 
-[4] (./samplepaper.bbl
+[4]
+Overfull \hbox (1.59825pt too wide) in paragraph at lines 127--128
+\T1/cmr/bx/n/10 représen-ta-tions linéaires \T1/cmr/m/n/10 : Les \T1/cmr/bx/n/10 Time-lines linéaires \T1/cmr/m/n/10 et \T1/cmr/bx/n/10 Date-Lens \T1/cmr/m/n/10 sont idéales
+ []
+
+
+Overfull \hbox (13.36894pt too wide) in paragraph at lines 132--133
+ \T1/cmr/bx/n/10 Vi-su-al-i-sa-tion de l'Incertitude Tem-porelle[] Plan-ning-Lines \T1/cmr/m/n/10 : Per-met d'intégrer
+ []
+
+[5]
+Overfull \hbox (12.83995pt too wide) in paragraph at lines 156--157
+\T1/cmr/m/n/10 : Présents dans les \T1/cmr/bx/n/10 Treemaps \T1/cmr/m/n/10 et le \T1/cmr/bx/n/10 Per-spec-tive Wall\T1/cmr/m/n/10 , ils per-me-t-tent d'approfondir
+ []
+
+
+Overfull \hbox (10.00726pt too wide) in paragraph at lines 164--165
+ \T1/cmr/bx/n/10 Pré-dic-tions et Ex-plo-ration Hy-pothé-tique[] Plan-ning-Lines \T1/cmr/m/n/10 : Per-met d'ajuster
+ []
+
+[6] [7] (./samplepaper.bbl
 Underfull \hbox (badness 3250) in paragraph at lines 10--11
 []\T1/cmr/m/n/9 Mackinlay, J.: Au-tomat-ing the de-sign of graph-i-cal pre-sen-ta-tions of re-la-
  []
@@ -274,7 +289,7 @@ Underfull \hbox (badness 2990) in paragraph at lines 10--11
 \T1/cmr/m/n/9 tional in-for-ma-tion. ACM Trans-ac-tions on Graph-ics \T1/cmr/bx/n/9 5\T1/cmr/m/n/9 (2), 110--141 (1986).
  []
 
-) [5] (./samplepaper.aux)
+) [8] (./samplepaper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -285,18 +300,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1999 strings out of 474116
- 29746 string characters out of 5743681
+ 2001 strings out of 474116
+ 29768 string characters out of 5743681
  1934187 words of memory out of 5000000
- 24377 multiletter control sequences out of 15000+600000
- 564904 words of font info for 46 fonts, out of 8000000 for 9000
+ 24378 multiletter control sequences out of 15000+600000
+ 565590 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,988b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on samplepaper.pdf (5 pages, 146265 bytes).
+ 57i,6n,65p,988b,241s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on samplepaper.pdf (8 pages, 181611 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
