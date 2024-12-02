@@ -4,9 +4,12 @@
 %
 \documentclass[runningheads]{llncs}
 \bibliographystyle{splncs04}
+% Réglage du niveau de profondeur de la table des matières
+\setcounter{secnumdepth}{2} % Inclure jusqu'à \subsubsection dans la numérotation
 
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{titlesec}
 
 \begin{document}
 
@@ -122,69 +125,99 @@ Ainsi, dans le contexte des systèmes de réservation, la visualisation ne se li
 \section{Synthèse}
 
 \subsection{Nature des Données et du Temps Représenté}
+La compréhension de la nature des données temporelles est fondamentale car le temps n'est pas un concept monolithique. Chaque ensemble de données temporelles possède une structure unique, une dynamique intrinsèque qui influence profondément sa représentation visuelle. Ce critère reconnaît que le temps peut être fluide ou segmenté, prévisible ou incertain, linéaire ou cyclique.
+La pertinence de ce critère réside dans sa capacité à, décoder la structure sous-jacente des données, choisir la technique de visualisation la plus appropriée, traduire la complexité temporelle en représentations intelligibles.
+\subsubsection{Données continues vs. données discrètes}
+\begin{itemize}
+    \item \textbf{Techniques adaptées à des représentations linéaires} : \emph{Timelines linéaires} et \emph{DateLens} permettent de visualiser des données discrètes en représentant des événements ponctuels le long d'un axe temporel.
+    \item \textbf{Techniques adaptées aux cycles répétitifs ou périodiques} : \emph{Spirales temporelles} et \emph{Circle View} sont idéales pour représenter des données cycliques, comme les réservations récurrentes ou les tendances saisonnières.
+\end{itemize}
 
-\subsubsection{Données Continues vs. Données Discrètes}
-\textbf{Techniques adaptées à des représentations linéaires} : Les \textbf{Timelines linéaires} et \textbf{DateLens} sont idéales pour visualiser des données discrètes, permettant de représenter des événements ponctuels le long d'un axe temporel.
-
-\textbf{Techniques adaptées aux cycles répétitifs ou périodiques} : Les \textbf{Spirales temporelles} et \textbf{Circle View} excellent dans la représentation de données cycliques, comme les réservations récurrentes ou les tendances saisonnières.
-
-\subsubsection{Visualisation de l'Incertitude Temporelle}
-\textbf{PlanningLines} : Permet d'intégrer des intervalles ou des plages temporelles incertaines en visualisant les durées minimales et maximales des créneaux.
-
-\textbf{Histogrammes de disponibilité} : Utilisent des probabilités temporelles pour représenter les chances d'occupation ou de disponibilité sur une période donnée.
+\subsubsection{Visualisation de l'incertitude temporelle}
+\begin{itemize}
+    \item \textbf{PlanningLines} : Intègre des intervalles ou des plages temporelles incertaines en visualisant les durées minimales et maximales des créneaux.
+    \item \textbf{Histogrammes de disponibilité} : Utilisent des probabilités temporelles pour représenter les chances d'occupation ou de disponibilité sur une période donnée.
+\end{itemize}
 
 \subsection{Dimensionnalité et Espace Visuel}
+La dimensionnalité transcende la simple représentation graphique. C'est un langage visuel qui permet de traduire la complexité multidimensionnelle des données temporelles.
+Dimensions d'importance :
+\begin{itemize}
+    \item Capture la richesse informationnelle
+    \item Permet des narrations visuelles complexes
+    \item Offre des perspectives multiples sur les mêmes données
+    \item Transforme des données brutes en récits visuels intelligibles
+\end{itemize}
+La dimensionnalité agit comme un microscope et un télescope simultanément, elle permet de zoomer sur les détails et de conserver une vue d'ensemble.
+\subsubsection{Visualisation 1D et 2D : Représentation linéaire et hiérarchique}
+\begin{itemize}
+    \item \textbf{Timelines linéaires} : Offrent une vue séquentielle des événements, facilitant la compréhension des enchaînements.
+    \item \textbf{Treemaps temporels} : Organisent les données hiérarchiques en blocs imbriqués, permettant de visualiser des catégories et sous-catégories de réservations.
+\end{itemize}
 
-\subsubsection{Visualisation 1D et 2D : Représentation Linéaire et Hiérarchique}
-\textbf{Timelines linéaires} : Offrent une vue séquentielle des événements, facilitant la compréhension des enchaînements.
+\subsubsection{Visualisation multidimensionnelle et 3D}
+\begin{itemize}
+    \item \textbf{Space-Time Cube} : Représente les données dans un espace tridimensionnel, combinant les dimensions spatiales et temporelles.
+    \item \textbf{Perspective Wall} : Fournit une vue étendue avec un focus central détaillé et un contexte latéral.
+\end{itemize}
 
-\textbf{Treemaps temporels} : Organisent les données hiérarchiques en blocs imbriqués, permettant de visualiser des catégories et sous-catégories de réservations.
-
-\subsubsection{Visualisation Multidimensionnelle et 3D}
-\textbf{Space-Time Cube} : Représente les données dans un espace tridimensionnel, combinant les dimensions spatiales et temporelles pour visualiser des schémas complexes.
-
-\textbf{Perspective Wall} : Fournit une vue étendue avec un focus central détaillé et un contexte latéral, idéal pour explorer de longues périodes.
-
-\subsubsection{Techniques de Distorsion pour Gérer des Petits Écrans}
-\textbf{DateLens (Fisheye)} : Utilise une distorsion pour afficher simultanément les détails et le contexte sur de petits écrans.
-
-\textbf{Circle View} : Adapte la représentation circulaire pour des écrans réduits, tout en conservant la capacité à représenter des cycles.
+\subsubsection{Techniques de distorsion pour gérer des petits écrans}
+\begin{itemize}
+    \item \textbf{DateLens (Fisheye)} : Utilise une distorsion pour afficher simultanément les détails et le contexte sur de petits écrans.
+    \item \textbf{Circle View} : Adapte la représentation circulaire aux écrans réduits, tout en conservant la capacité à représenter des cycles.
+\end{itemize}
 
 \subsection{Interactions Utilisateur}
+Les interactions utilisateur sont le cœur vivant de toute visualisation de données. Elles transforment une représentation statique en une expérience dynamique et personnalisée. Dans le contexte des données temporelles, les interactions permettent non seulement d'explorer les informations, mais aussi de les interpréter, de les comprendre en profondeur et même de les manipuler de manière hypothétique. C'est l'équivalent visuel d'une conversation avec les données, où l'utilisateur peut poser des questions, explorer des hypothèses et découvrir des insights cachés.
+\subsubsection{Exploration directe et manipulation des données}
+\begin{itemize}
+    \item \textbf{Drill-down et zoom} : Techniques utilisées dans les \emph{Treemaps} et le \emph{Perspective Wall} pour approfondir les données tout en conservant une vue d'ensemble.
+    \item \textbf{Navigation dans le temps} : Offerte par \emph{DateLens} et le \emph{Space-Time Cube}, elle permet d'explorer différentes périodes de manière intuitive.
+\end{itemize}
 
-\subsubsection{Exploration Directe et Manipulation des Données}
-\textbf{Drill-down et zoom} : Présents dans les \textbf{Treemaps} et le \textbf{Perspective Wall}, ils permettent d'approfondir les données tout en conservant une vue d'ensemble.
+\subsubsection{Narration interactive}
+\begin{itemize}
+    \item \textbf{Trendalyzer} : Anime les données pour explorer des séquences narratives et comprendre les évolutions et tendances.
+\end{itemize}
 
-\textbf{Navigation dans le temps} : \textbf{DateLens} et le \textbf{Space-Time Cube} offrent des interactions naturelles pour explorer différentes périodes.
-
-\subsubsection{Narration Interactive}
-\textbf{Trendalyzer} : Anime les données pour explorer des séquences narratives, aidant à comprendre les évolutions et tendances.
-
-\subsubsection{Prédictions et Exploration Hypothétique}
-\textbf{PlanningLines} : Permet d'ajuster les scénarios et d'évaluer les possibilités futures en modifiant les plages temporelles.
+\subsubsection{Prédictions et exploration hypothétique}
+\begin{itemize}
+    \item \textbf{PlanningLines} : Permet d'ajuster les scénarios et d'évaluer les possibilités futures en modifiant les plages temporelles.
+\end{itemize}
 
 \subsection{Cas d’Usage et Applications}
+Ce critère démontre que les visualisations temporelles ne sont pas des exercices académiques, mais des outils pratiques et transformateurs. Chaque technique de visualisation est un pont entre des données complexes et des décisions concrètes. Il traduit l'abstraction mathématique en insights stratégiques, permettant aux organisations et aux individus de transformer la donnée en action.
 
-\subsubsection{Planification et Gestion des Ressources}
-\textbf{PlanningLines} et \textbf{Timelines linéaires} : Aident à optimiser l'utilisation des ressources et à réduire les conflits de réservation.
+\subsubsection{Planification et gestion des ressources}
+\begin{itemize}
+    \item \textbf{PlanningLines} et \textbf{Timelines linéaires} : Outils efficaces pour optimiser l'utilisation des ressources et réduire les conflits de réservation.
+\end{itemize}
 
-\subsubsection{Réservations Multiressources ou Multi-Périodes}
-\textbf{Circle View} et \textbf{Space-Time Cube} : Adaptés pour visualiser des réservations impliquant plusieurs ressources ou étalées sur plusieurs périodes.
+\subsubsection{Réservations multiressources ou multi-périodes}
+\begin{itemize}
+    \item \textbf{Circle View} et \textbf{Space-Time Cube} : Permettent de visualiser des réservations complexes impliquant plusieurs ressources ou périodes.
+\end{itemize}
 
-\subsubsection{Tendances Temporelles et Cycles}
-\textbf{Graphes animés} et \textbf{Spiral Plots} : Permettent d'identifier des cycles et des tendances, facilitant la prise de décision stratégique.
+\subsubsection{Tendances temporelles et cycles}
+\begin{itemize}
+    \item \textbf{Graphes animés} et \textbf{Spiral Plots} : Identifient les cycles et tendances pour faciliter la prise de décision stratégique.
+\end{itemize}
 
 \subsection{Contraintes Matérielles et Scalabilité}
+La valeur d'une visualisation de données est directement liée à sa capacité à s'adapter aux différents environnements technologiques. Dans un monde où l'information est consultée sur une variété de dispositifs - du smartphone gigantesque aux écrans professionnels - la flexibilité et l'adaptabilité deviennent cruciales. Ce critère garantit que l'insight reste accessible et lisible, quelle que soit la plateforme.
+\subsubsection{Adaptabilité aux écrans mobiles vs grands écrans}
+\begin{itemize}
+    \item \textbf{Techniques adaptées aux petits écrans} : \emph{DateLens} et \emph{Circle View} offrent une expérience optimale sur des dispositifs mobiles.
+    \item \textbf{Techniques pour des tableaux de bord professionnels} : \emph{Space-Time Cube} et \emph{Perspective Wall} sont mieux adaptés aux grands écrans.
+\end{itemize}
 
-\subsubsection{Adaptabilité aux Écrans Mobiles vs Grands Écrans}
-\textbf{Techniques adaptées aux petits écrans} : \textbf{DateLens} et \textbf{Circle View} sont conçus pour offrir une expérience optimale sur des dispositifs mobiles.
+\subsubsection{Capacité à gérer de grands ensembles de données}
+\begin{itemize}
+    \item \textbf{Treemaps temporels} : Représentent efficacement des hiérarchies complexes.
+    \item \textbf{Timelines} : Idéales pour des volumes moyens avec des détails clairs.
+\end{itemize}
 
-\textbf{Techniques pour des tableaux de bord professionnels} : Le \textbf{Space-Time Cube} et le \textbf{Perspective Wall} sont mieux adaptés aux grands écrans pour une visualisation détaillée.
-
-\subsubsection{Capacité à Gérer de Grands Ensembles de Données}
-\textbf{Treemaps temporels} : Efficaces pour représenter des hiérarchies complexes avec de nombreuses catégories.
-
-\textbf{Timelines} : Idéales pour des volumes de données moyens, offrant une clarté dans les détails.
+\section{Tableau de synthèse}
 
 \section{Conclusion}
 

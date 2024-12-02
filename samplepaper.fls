@@ -33,6 +33,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./samplepaper.aux

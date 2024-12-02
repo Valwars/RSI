@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex samplepaper"] 1732562563.57405 "samplepaper.aux" "samplepaper.bbl" "samplepaper" 1732562563.85709 2
+["bibtex samplepaper"] 0 "samplepaper.aux" "samplepaper.bbl" "samplepaper" 0 -1
   "./references.bib" 1732548643.72592 55751 0995f60d1520731821904d7965ed02b5 ""
   "./splncs04.bst" 1731832326 32146 aadf770ded437d161532035219ea6f45 ""
-  "samplepaper.aux" 1732562563.06775 4855 9a44100e3b906f9765f7858792b5019d "pdflatex"
+  "samplepaper.aux" 1733143060.7188 4963 432f75ff994d6349b6f64ea36b82844b "pdflatex"
   (generated)
   "samplepaper.bbl"
   "samplepaper.blg"
   (rewritten before read)
-["pdflatex"] 1732562562.59246 "/Users/valentinmerault/Projets/RSI/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1732562563.85722 0
-  "/Users/valentinmerault/Projets/RSI/samplepaper.tex" 1732562560.06452 20307 59632a5224680f2ad116b615fec79172 ""
+["pdflatex"] 1733143060.25203 "/Users/valentinmerault/Projets/RSI/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1733143062.4359 2
+  "/Users/valentinmerault/Projets/RSI/samplepaper.tex" 1733143058.60097 23476 4c43cde532cd60f7a369b2cafafe7d72 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -44,15 +44,16 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1708463273 30006 3d512c0edd558928ddea1690180ef77e ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/oberdiek/aliascnt.sty" 1575152444 2652 813491e2bc95c1dafbb39cd7c54b380b ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty" 1698436711 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty" 1686341992 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1731838866.06947 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731838798 8221431 c02329c434cda70acdf978b2d5a1c17c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "llncs.cls" 1731832326 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1732562563.06775 4855 9a44100e3b906f9765f7858792b5019d "pdflatex"
+  "samplepaper.aux" 1733143060.7188 4963 432f75ff994d6349b6f64ea36b82844b "pdflatex"
   "samplepaper.bbl" 1732562563.85362 1328 213c9c44b1c4ec6764bb3657c4f00b02 "bibtex samplepaper"
-  "samplepaper.tex" 1732562560.06452 20307 59632a5224680f2ad116b615fec79172 ""
+  "samplepaper.tex" 1733143058.60097 23476 4c43cde532cd60f7a369b2cafafe7d72 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"
